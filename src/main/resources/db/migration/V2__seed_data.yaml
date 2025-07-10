@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2-seed-initial-data
+      author: master
+      changes:
+        - insert:
+            tableName: roles
+            columns:
+              - column: { name: id, valueNumeric: 1 }
+              - column: { name: name, value: ADMIN }
+        - insert:
+            tableName: roles
+            columns:
+              - column: { name: id, valueNumeric: 2 }
+              - column: { name: name, value: USER  }
+
+        - insert:
+            tableName: users
+            columns:
+              - column: { name: id, valueNumeric: 1 }
+              - column: { name: username, value: admin }
+              - column: { name: password, value: $2a$10$qEuuoz.ynX3DPxSQzfY23exgQ7ta4hKnQW3m5E31bpxq7eUahYtpS }
+
+        - insert:
+            tableName: user_roles
+            columns:
+              - column: { name: user_id, valueNumeric: 1 }
+              - column: { name: role_id, valueNumeric: 1 }
