@@ -51,8 +51,12 @@
    JWT_SECRET=your_jwt_secret
    JWT_LIFETIME=3600000
    ```
+3. **Выполните:**
+    ```bash
+   mvn clean install
+   ```
 
-3. **Запустите через Docker Compose:**
+4. **Запустите через Docker Compose:**
    ```bash
    docker-compose up --build
    ```
@@ -63,13 +67,13 @@
     `Password: admin`
 
 
-4. **API будет доступен по адресу:**  
+5. **API будет доступен по адресу:**  
    `http://localhost:8080`
 
-5. **Swagger UI:**  
+6. **Swagger UI:**  
    `http://localhost:8080/swagger-ui.html`
 
-6. **OpenAPI спецификация:**  
+7. **OpenAPI спецификация:**  
    `docs/openapi.yaml`  
    (или по адресу `/v3/api-docs` в формате JSON)
 

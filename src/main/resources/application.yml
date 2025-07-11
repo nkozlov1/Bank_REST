@@ -20,10 +20,3 @@ jwt:
 
 encoder:
   secret: ${SECRET:123456789aaaabbb}
-
-logging:
-  level:
-    liquibase: DEBUG
-    com.fasterxml.jackson: DEBUG
-    org.springframework.web: DEBUG
-    http.converter: DEBUG
